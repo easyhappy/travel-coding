@@ -1,6 +1,6 @@
 ### 关于我
 
-Hello 大家好，我是公众号漫步coding的作者, 很高兴我们能在这里相聚。可以关注公众号, 一起交流。
+Hello 大家好，我是公众号: `漫步coding` 的作者, 很高兴我们能在这里相聚。可以关注公众号, 一起交流。
 
 
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/5cb0c91e-fd83-4a04-8df6-65fb602b3834.png)
