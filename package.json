@@ -1,10 +1,11 @@
 {
-  "name": "vuepress-starter",
+  "name": "test002",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.9.7"
+    "vuepress": "^1.9.7",
+    "vuepress-theme-reco": "^1.6.11"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",

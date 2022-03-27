@@ -10,6 +10,4 @@ Hello 大家好，我是公众号漫步coding的作者, 很高兴我们能在这
 
 也欢迎大家关注我的公众号:
 
-![](https://images.xiaozhuanlan.com/uploads/photo/2022/5cb0c91e-fd83-4a04-8df6-65fb602b3834.png)
-
-[立即阅读](/mysql/MySQL最新面试题及思维导图.html)
+![](https://images.xiaozhuanlan.com/uploads/photo/2021/ebadcf18-553b-42d5-ab2d-3414564d9c33.png!large)
