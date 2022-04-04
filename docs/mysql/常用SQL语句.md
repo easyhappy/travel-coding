@@ -1,0 +1,15 @@
+- SQL语句主要分为哪几类  
+- 超键、候选键、主键、外键分别是什么？  
+- SQL 约束有哪几种？  
+- 六种关联查询  
+- 什么是子查询  
+- 子查询的三种情况    
+- mysql中 in 和 exists 区别  
+- varchar与char的区别  
+- varchar(50)中50的涵义  
+- int(20)中20的涵义  
+- mysql为什么这么设计  
+- mysql中int(10)和char(10)以及varchar(10)的区别  
+- FLOAT和DOUBLE的区别是什么？  
+- drop、delete与truncate的区别  
+- UNION与UNION ALL的区别？  

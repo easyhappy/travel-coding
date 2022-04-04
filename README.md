@@ -23,3 +23,4 @@ Hello 大家好，我是公众号: `漫步coding` 的作者, 很高兴我们能�
 ### 开发工具必备
 
 - [2022 年最新 Charles 使用教程 (文中含激活码)](./docs/tools/最新Charles使用教程(文中含激活码).md)
+- [如何利用VuePress和GithubPage搭建一个轻量级博客](./docs/tools/VuePress和GithubPage博客搭建.md)

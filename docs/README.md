@@ -1,15 +1,28 @@
-Hello 大家好，我是公众号漫步coding的作者, 很高兴我们能在这里相聚。
+### 关于我
 
-从2012年毕业到现在, 满打满算作为一名程序员也十年了, 妥妥算是一个互联网老兵, 这十年间走过了很多弯路, 也有很多幸运。
+Hello 大家好，我是公众号: `漫步coding` 的作者, 很高兴我们能在这里相聚。可以关注公众号, 一起交流。
 
-关于漫步coding, 未来主要会写一些关于数据库、算法、系统架构、面试系列的、职场规划、以及工作中的一些思考，遇到的一些坑等等, 希望在这个过程中能够遇到一些志同道合的人, 一起交流和进步。同时也希望自己写的可以帮助到一些人, 少走一些弯路, 多一些幸运。
-
-因为技术类文章需要时间梳理和消化，这个更新频率会相对慢一些。
-
-所以每天也会分享一些好玩的漫画、事情、文章等等，开始美好的一天。大家也可以一起分享自己的好玩、有趣的事情, 毕竟编程是一件快乐的事情。
-
-也欢迎大家关注我的公众号:
 
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/5cb0c91e-fd83-4a04-8df6-65fb602b3834.png)
 
-[立即阅读](/mysql/MySQL最新面试题及思维导图.html)
+👉 点击：[立即开始阅读](/mysql/前言.html)
+
+### IntelliJ IDEA
+
+- [2022年PyCharm 最新破解教程](/idea/PyCharm最新破解教程.md)
+- [2022年Goland 最新破解教程](/idea/Goland最新破解教程.md)
+- [2022 年 PhpStorm 最新破解教程](/idea/PhpStorm最新破解教程.md)
+- [2022 年 webStorm 最新破解教程](/idea/webStorm最新破解教程.md)
+- [2022 年 IntelliJ IDEA 最新破解教程](/idea/IntelliJIDEA最新破解教程.md)
+- [2022 年 IntelliJ IDEA 最新破解教程](/idea/AppCode最新破解教程.md)
+
+### Mysql相关
+
+- [2022年MySQL最新面试题](/mysql/前言.html)
+- [MySQL 最新常见面试题和学习思维导图](/mysql/MySQL最新面试题及思维导图.md)
+
+
+### 开发工具必备
+
+- [2022 年最新 Charles 使用教程 (文中含激活码)](/tools/最新Charles使用教程.md)
+- [如何利用VuePress和GithubPage搭建一个轻量级博客](/tools/VuePress和GithubPage博客搭建.md)

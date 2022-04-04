@@ -1,3 +1,9 @@
+---
+title: 2022年PhpStorm最新破解教程
+author: 漫步coding
+date: '2022-3-3'
+---
+
 ### PhpStorm工具介绍
 
 目前PhpStorm 完美支持 Symfony、Laravel、Drupal、WordPress、Zend Framework、Magento、Joomla!、CakePHP、Yii 等各种主流框架。

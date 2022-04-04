@@ -1,3 +1,10 @@
+---
+title: 2022年IntelliJ IDEA工具介绍
+author: 漫步coding
+date: '2022-3-12'
+---
+
+
 ### IntelliJ IDEA工具介绍
 
 
