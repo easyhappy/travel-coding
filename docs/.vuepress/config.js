@@ -43,6 +43,15 @@ module.exports = {
                 ]
             },
             {
+              title: '2022年Redis最新面试题',
+                collapsable: true, // 不折叠
+                children: [
+                    { title: "前言", path: "/redis/前言", collapsable: false},
+                    { title: "Redis基础知识", path: "/redis/redis基础知识", collapsable: false},
+                    { title: "漫步coding还在整理中, 敬请期待...", path: "", collapsable: false},
+                ]
+            },
+            {
                 title: 'IDEA系列教程',
                 collapsable: true, // 不折叠
                 children: [
@@ -54,6 +63,7 @@ module.exports = {
                     { title: "2022年AppCode最新破解教程", path: "/idea/AppCode最新破解教程", collapsable: false},
                 ]
             },
+
             {
               title: '开发工具',
                 collapsable: true, // 不折叠
