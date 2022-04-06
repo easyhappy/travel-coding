@@ -7,7 +7,6 @@
 
 - 什么是 Redis, 有哪些优缺点?
 - 一个字符串类型的值能存储最大容量是多少？
-- 了解哪些key - value 缓存产品
 - Redis 相比 Memcached 有哪些优势？
 - Redis 最适合的场景, 可以简单的说说吗?
 
@@ -97,3 +96,5 @@ https://juejin.cn/post/6844904017387077640
 https://www.php.cn/faq/457390.html
 
 https://blog.51cto.com/u_14433813/5095091?b=totalstatistic
+
+https://z.itpub.net/article/detail/DEF79B1D32141A69369CFA91D46289DC

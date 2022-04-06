@@ -11,7 +11,6 @@ date: '2022-4-5'
 - Redis 最适合的场景, 可以简单的说说吗?
 - Redis 相比 Memcached 有哪些优势？
 - 一个字符串类型的值能存储最大容量是多少？
-- 了解哪些key - value 缓存产品
 
 
 
@@ -127,14 +126,16 @@ status|   未签到|  已签到|  已签到 | ...
 
 如果简单地比较Redis与Memcached的区别，大多数都会得到以下观点：
 
-1 、Redis不仅仅支持简单的k/v类型的数据，同时还提供list，set，zset，hash等数据结构的存储。
+1 、数据支持类型 Memcache 对数据类型支持相对简单。Redis 有复杂的数据类型。Redis不仅仅支持简单的k/v类型的数据，同时还提供list，set，zset，hash等数据结构的存储。
 
 2 、Redis支持数据的备份，即master-slave模式的数据备份。
 
-3 、Redis支持数据的持久化，可以将内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用。
+3 、存储方式 Memecache 把数据全部存在内存之中， 断电后会挂掉， 数据不能超过内存大小。Redis支持数据的持久化，可以将内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用。
 
 
-![](https://images.xiaozhuanlan.com/uploads/photo/2022/0affbea2-195b-4372-9293-652df1cf3959.png)
+#### 一个字符串类型的值能存储最大容量是多少？
+
+Redis中字符串限制最大为512MB
 
 
 漫步coding还在整理中, 敬请期待, 可以关注公众号: `漫步coding` 了解最新情况...
