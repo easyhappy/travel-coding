@@ -48,6 +48,7 @@ module.exports = {
                 children: [
                     { title: "前言", path: "/redis/前言", collapsable: false},
                     { title: "Redis基础知识", path: "/redis/redis基础知识", collapsable: false},
+                    { title: "Redis数据结构", path: "/redis/redis数据结构", collapsable: false},
                     { title: "漫步coding还在整理中, 敬请期待...", path: "", collapsable: false},
                 ]
             },

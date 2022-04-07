@@ -51,7 +51,20 @@ List的特点是:
 
 4)、set
 
+set和字典非常类似，其内部实现就是上述的hashTable的特殊实现，与字典不同的地方有两点：
+
+- 只关注key值，所有的value都是NULL。
+- 在新增数据时会进行去重。
+
+![](https://images.xiaozhuanlan.com/uploads/photo/2022/0215349d-fcc7-4eaf-a199-13f7ae225b33.png)
+
+
 5)、zsetsorted set
+
+zSet是Redis非常有特色的数据结构，它是基于Set并提供排序的有序集合。其中最为重要的特点就是支持通过score的权重来指定权重。一些延迟任务比如指定1小时执行, 就是使用这个数据结构实现的。
+
+![](https://images.xiaozhuanlan.com/uploads/photo/2022/121dc53f-a84d-46a4-b06c-a86c8e8f8a65.png)
+
 
 6)、**拓展篇**
 
