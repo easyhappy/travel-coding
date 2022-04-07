@@ -3,7 +3,7 @@ module.exports = {
   lang: 'en-US',
   title: '漫步coding',
   description: '漫步coding的博客',
-  base: '/travel-coding/',
+  base: '/',
   theme: 'reco',
   themeConfig: {
     themeConfig: {
