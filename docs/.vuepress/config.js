@@ -13,8 +13,8 @@ module.exports = {
       platform: 'github',
       owner: 'easyhappy',
       repo: 'travel-coding',
-      clientId: '8022a11ea627286012fb',
-      clientSecret: '2f67f50e620b7095b3a35b8cd634e41267bc4a4d',
+      clientId: 'c98ad941018b4a89cccd',
+      clientSecret: 'c93bdc23a86b43fe665812ce57daa05996929c09',
     },
     sidebar: [
             {
