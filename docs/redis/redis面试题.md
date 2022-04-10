@@ -98,3 +98,6 @@ https://www.php.cn/faq/457390.html
 https://blog.51cto.com/u_14433813/5095091?b=totalstatistic
 
 https://z.itpub.net/article/detail/DEF79B1D32141A69369CFA91D46289DC
+
+关于Redis的十个高频面试问题
+https://www.1024sou.com/article/267804.html
