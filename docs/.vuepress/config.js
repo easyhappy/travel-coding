@@ -50,6 +50,7 @@ module.exports = {
                     { title: "Redis基础知识", path: "/redis/redis基础知识", collapsable: false},
                     { title: "Redis数据结构", path: "/redis/redis数据结构", collapsable: false},
                     { title: "Redis事务", path: "/redis/redis事务", collapsable: false},
+                    { title: "Redis数据持久化", path: "/redis/redis数据持久化", collapsable: false},
                     { title: "漫步coding还在整理中, 敬请期待...", path: "", collapsable: false},
                 ]
             },
