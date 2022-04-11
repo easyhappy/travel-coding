@@ -45,6 +45,7 @@
 - Redis 集群之间是如何复制的？
 - Redis 集群最大节点个数是多少？16384个。
 - Redis 集群如何选择数据库？
+- Redis 的同步机制了解么？
 
 ### 缓存问题
  
@@ -101,3 +102,7 @@ https://z.itpub.net/article/detail/DEF79B1D32141A69369CFA91D46289DC
 
 关于Redis的十个高频面试问题
 https://www.1024sou.com/article/267804.html
+
+Redis面试宝典
+
+https://gitchat.csdn.net/column/5ee1d22c4a99494972797132

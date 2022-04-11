@@ -4,15 +4,10 @@ author: 漫步coding
 date: '2022-4-10'
 ---
 
-### 数据持久化
+#### 概要
 
 - 为什么 Redis 需要把所有数据放到内存中？
 - Redis如何做持久化的？
-- Redis 的同步机制了解么？
-- Redis 的持久化机制是什么？各自的优缺点？
-  - 8.1、 RDBRedis DataBase)持久化方式：
-  - 8.2、 AOFAppend-only file)持久化方式
-
 - Redis key 的过期时间和永久有效分别怎么设置？
 
 
@@ -25,7 +20,7 @@ Redis为了达到最快的读写速度将数据都读到内存中，并通过异
 
 #### Redis如何做持久化的？
 
-出现概率: ★★★★
+出现概率: ★★★★★
 
 bgsave做镜像全量持久化，AOF做增量持久化。因为bgsave会耗费较长时间，不够实时，在停机的时候会导致大量丢失数据，所以需要AOF来配合使用。在redis实例重启时，优先使用AOF来恢复内存的状态，如果没有AOF日志，就会使用RDB文件来恢复。
 
@@ -67,16 +62,27 @@ AOF 利用 appendfsync 持久化机制，异步操作每秒记录，数据完整
 
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/bbbd186a-125d-4389-8f34-a14e2e582faf.png)
 
-
-#### Redis 的同步机制了解么？
+#### Redis key 的过期时间和永久有效分别怎么设置？
 
 出现概率: ★★★
 
-主从同步。第一次同步时，主节点做一次bgsave，并同时将后续修改操作记录到内存buffer，待完成后将rdb文件全量同步到复制节点，复制节点接受完成后将rdb镜像加载到内存。加载完成后，再通知主节点将期间修改的操作记录同步到复制节点进行重放就完成了同步过程。
+EXPIRE 和 PERSIST 命令。Redis Expire 命令用于设置 key 的过期时间，key 过期后将不再可用。单位以秒计。 Redis PERSIST 命令用于移除给定 key 的过期时间，使得 key 永不过期。
 
-![](https://images.xiaozhuanlan.com/uploads/photo/2022/ea0fc16c-24f0-4562-8498-286ecce4687a.png)
-
-
+```
+127.0.0.1:6379> set name '漫步coding' EX 100000
+OK
+127.0.0.1:6379> ttl name # ttl 查看key过期时间
+(integer) 99997
+127.0.0.1:6379> set brief '一个专注算法、数据库、架构、计算机网络的公众号'
+OK
+127.0.0.1:6379> ttl brief
+(integer) -1
+127.0.0.1:6379> PERSIST name
+(integer) 1
+127.0.0.1:6379> ttl name
+(integer) -1 # -1 表示永久有效
+127.0.0.1:6379>
+```
 
 漫步coding还在整理中, 敬请期待, 可以关注公众号: `漫步coding` 了解最新情况...
 
