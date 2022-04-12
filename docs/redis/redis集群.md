@@ -11,17 +11,11 @@ date: '2022-4-11'
 - 是否使用过 Redis 集群，集群的原理是什么？
 - 可以简单说说你对Redis Sentinel的理解
 - Redis Sentinal和Redis Cluster的区别
-- Redis 集群方案什么情况下会导致整个集群不可用？
-- Redis 集群的主从复制模型是怎样的？
-- Redis 集群会有写操作丢失吗？为什么？
-- Redis 集群之间是如何复制的？
-- Redis 集群最大节点个数是多少？16384个。
-- Redis 集群如何选择数据库？
 - Redis 的同步机制了解么？
+- Redis 集群最大节点个数是多少？
 
 
 #### Redis 是单进程单线程的？
-
 
 出现概率: ★★★★
 
@@ -56,9 +50,11 @@ Redis Cluster 是 在 3.0 版本正式推出的高可用集群方案，相比Red
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/e0ad2ef5-abb1-4552-b5f1-ce24ecfc29d3.png)
 
 
-出现概率: ★★★
+
 
 #### 可以简单说说你对Redis Sentinel的理解
+
+出现概率: ★★★
 
 Redis Sentinel是官方从Redis 2.6版本提供的高可用方案，在Redis主从复制集群的基础上，增加Sentinel集群监控整个Redis集群。当Redis集群master节点发生故障时，Sentinel进行故障切换，选举出新的master，同时Sentinel本身支持高可用集群部署。
 
@@ -74,8 +70,32 @@ Redis Sentinal和Redis Cluster的区别主要在于侧重点不同:
 - Redis Cluster主要聚焦于扩展性，在单个redis内存不足时，使用Cluster进行分片存储。
 
 
+#### Redis 的同步机制了解么？
+
+出现概率: ★★★
+
+主从同步。第一次同步时，主节点做一次bgsave，并同时将后续修改操作记录到内存buffer，待完成后将rdb文件全量同步到复制节点，复制节点接受完成后将rdb镜像加载到内存。加载完成后，再通知主节点将期间修改的操作记录同步到复制节点进行重放就完成了同步过程。
+
+全备份过程中，在slave启动时，会向其master发送一条SYNC消息，master收到slave的这条消息之后，将可能启动后台进程进行备份，备份完成之后就将备份的数据发送给slave，初始时的全同步机制是这样的：
+
+![](https://images.xiaozhuanlan.com/uploads/photo/2022/41856c14-f8ee-426b-99d8-f77ef21eb326.png)
+
+#### Redis 集群最大节点个数是多少？
+
+出现概率: ★★★
+
+这个比较偏， 知道的人不多， 如果你可以答出最大节点数，然后给出解释, 估计面试官的好感度, 会蹭蹭的往上涨。
+
+16384 个。这是因为Redis 集群并没有使用一致性hash，而是引入了哈希槽的概念。Redis 集群有16384个哈希槽，每个key通过CRC16校验后对16384取模来决定放置哪个槽，集群的每个节点负责一部分hash槽。
+
+**但为什么哈希槽的数量是16384（2^14）个呢?**
+
+在redis节点发送心跳包时需要把所有的槽放到这个心跳包里，以便让节点知道当前集群信息，16384=16k，在发送心跳包时使用char进行bitmap压缩后是2k（2 * 8 (8 bit) * 1024(1k) = 16K），也就是说使用2k的空间创建了16k的槽数。
+
+虽然使用CRC16算法最多可以分配65535（2^16-1）个槽位，65535=65k，压缩后就是8k（8 * 8 (8 bit) * 1024(1k) =65K），也就是说需要需要8k的心跳包，Redis作者认为这样做不太值得；并且一般情况下一个redis集群不会有超过1000个master节点，所以16k的槽位是个比较合适的选择。
+
+关于Redis作者讨论为什么这么设计, 可以[看这里](https://github.com/redis/redis/issues/2576)。
 
 漫步coding还在整理中, 敬请期待, 可以关注公众号: `漫步coding` 了解最新情况...
-
 
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/5cb0c91e-fd83-4a04-8df6-65fb602b3834.png)
