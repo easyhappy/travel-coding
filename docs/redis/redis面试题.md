@@ -82,6 +82,8 @@
 - 如何用Redis实现定时任务或者Redis如何实现延时队列？
 - 如何保证缓存与数据库双写时的数据一致性？
 
+如何保持mysql和redis中数据的一致性？
+https://www.zhihu.com/question/319817091/answer/2110995185
 
 
 https://segmentfault.com/a/1190000022029639
@@ -91,6 +93,9 @@ https://www.jxshyzhx.com/guonei/202201/36641.html
 
 https://juejin.cn/post/6844904017387077640
 
+
+2W字！详解20道Redis经典面试题
+https://www.sohu.com/a/486868862_121124376
 
 
 
