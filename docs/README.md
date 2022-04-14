@@ -22,6 +22,12 @@ Hello 大家好，我是公众号: `漫步coding` 的作者, 很高兴我们能�
 - [MySQL 最新常见面试题和学习思维导图](/mysql/MySQL最新面试题及思维导图.md)
 
 
+### Redis相关
+
+- [2022年Redis最新面试题](/redis/前言.html)
+
+
+
 ### 开发工具必备
 
 - [2022 年最新 Charles 使用教程 (文中含激活码)](/tools/最新Charles使用教程.md)

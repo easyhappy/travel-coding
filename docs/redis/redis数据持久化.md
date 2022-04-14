@@ -22,7 +22,7 @@ Redis为了达到最快的读写速度将数据都读到内存中，并通过异
 
 出现概率: ★★★★★
 
-bgsave做镜像全量持久化，AOF做增量持久化。因为bgsave会耗费较长时间，不够实时，在停机的时候会导致大量丢失数据，所以需要AOF来配合使用。在redis实例重启时，优先使用AOF来恢复内存的状态，如果没有AOF日志，就会使用RDB文件来恢复。
+<font color=#FF000 >bgsave做镜像全量持久化，AOF做增量持久化</font>。因为bgsave会耗费较长时间，不够实时，在停机的时候会导致大量丢失数据，所以需要AOF来配合使用。在redis实例重启时，优先使用AOF来恢复内存的状态，如果没有AOF日志，就会使用RDB文件来恢复。
 
 如果再问AOF文件过大恢复时间过长怎么办？你告诉面试官，Redis会定期做AOF重写，压缩AOF文件日志大小。如果面试官不够满意，再拿出杀手锏答案，Redis4.0之后有了混合持久化的功能，将bgsave的全量和AOF的增量做了融合处理，这样既保证了恢复的效率又兼顾了数据的安全性。这个功能甚至很多面试官都不知道，他们肯定会对你刮目相看。
 
@@ -34,7 +34,7 @@ bgsave做镜像全量持久化，AOF做增量持久化。因为bgsave会耗费�
 
 1)、RDB工作原理
 
-既然说RDB是Redis中数据集的时间点快照，在Redis内完成RDB持久化的方法有rdbSave和rdbSaveBackground两个函数方法（源码文件rdb.c中），先简单说下两者差别：
+既然说RDB是Redis中数据集的时间点快照，在Redis内完成RDB持久化的方法有<font color=#FF000 >rdbSave</font>和<font color=#FF000 >rdbSaveBackground</font>两个函数方法（源码文件rdb.c中），先简单说下两者差别：
 
 - rdbSave：是同步执行的，方法调用后就会立刻启动持久化流程。由于Redis是单线程模型，持久化过程中会阻塞，Redis无法对外提供服务；
 - rdbSaveBackground：是后台（异步）执行的，该方法会fork出子进程，真正的持久化过程是在子进程中执行的（调用rdbSave），主进程会继续提供服务；
@@ -48,7 +48,7 @@ RDB持久化的触发必然离不开以上两个方法，触发的方式分为�
 
 2)、AOF 工作原理
 
-AOF 持久化全称 append only file，以日志形式记录每个写操作，将 redis 执行过得所有写操作指令记录下来（读操作不记录）。只许追加文件但不可以改写文件，redis 启动之初会读取该文件重新构建数据，换言之，redis 重启的话就根据日志文件的内容将写操作指令从前到后执行一次以完成数据的恢复工作。
+<font color=#FF000 >AOF 持久化全称 append only file</font>，以日志形式记录每个写操作，将 redis 执行过得所有写操作指令记录下来（读操作不记录）。只许追加文件但不可以改写文件，redis 启动之初会读取该文件重新构建数据，换言之，redis 重启的话就根据日志文件的内容将写操作指令从前到后执行一次以完成数据的恢复工作。
 
 AOF 默认保存的是 appendonly.AOF 文件，此文件具有可读性。
 
@@ -66,7 +66,7 @@ AOF 利用 appendfsync 持久化机制，异步操作每秒记录，数据完整
 
 出现概率: ★★★
 
-EXPIRE 和 PERSIST 命令。Redis Expire 命令用于设置 key 的过期时间，key 过期后将不再可用。单位以秒计。 Redis PERSIST 命令用于移除给定 key 的过期时间，使得 key 永不过期。
+<font color=#FF000 >EXPIRE 和 PERSIST 命令</font>。Redis Expire 命令用于设置 key 的过期时间，key 过期后将不再可用。单位以秒计。 Redis PERSIST 命令用于移除给定 key 的过期时间，使得 key 永不过期。
 
 ```
 127.0.0.1:6379> set name '漫步coding' EX 100000
