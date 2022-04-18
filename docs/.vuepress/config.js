@@ -55,7 +55,7 @@ module.exports = {
                     { title: "Redis淘汰策略", path: "/redis/redis淘汰策略", collapsable: false},
                     { title: "Redis分布式锁", path: "/redis/redis分布式锁", collapsable: false},
                     { title: "Redis缓存问题", path: "/redis/redis缓存问题", collapsable: false},
-                    { title: "漫步coding还在整理中, 敬请期待...", path: "", collapsable: false},
+                    { title: "Redis运维和部署", path: "/redis/redis运维和部署", collapsable: false},
                 ]
             },
             {
