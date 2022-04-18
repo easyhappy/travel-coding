@@ -3,13 +3,6 @@
 
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/f1d6a4d8-0568-4d20-b743-cd1dc32075e8.png)
 
-### 事务
-
-- 怎么理解 Redis 事务？
-- Redis 事务相关的命令有哪几个？
-- 如何利用Redis提供的原子指令来实现分布式锁
-- Redis 事务相关的命令有哪几个?​ ​MULTI、EXEC、DISCARD、WATCH
-
 ### 数据持久化
 
 - 为什么 Redis 需要把所有数据放到内存中？
@@ -33,12 +26,6 @@
 - Redis 集群如何选择数据库？
 - Redis 的同步机制了解么？
 
-
-### 淘汰策略
-
-- redis 过期键的删除策略？
-- Redis 的回收策略（淘汰策略）或者说 Redis回收使用的是什么算法?
-- Redis 回收进程如何工作的？
 
 ### Redis 常见性能问题和解决方案
 

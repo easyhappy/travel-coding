@@ -66,8 +66,8 @@ Redis Sentinel是官方从Redis 2.6版本提供的高可用方案，在Redis主�
 
 Redis Sentinal和Redis Cluster的区别主要在于侧重点不同:
 
-- Redis Sentinal主要聚焦于高可用，在master宕机时会自动将slave提升为master，继续提供服务。
-- Redis Cluster主要聚焦于扩展性，在单个redis内存不足时，使用Cluster进行分片存储。
+- <font color=#FF000 >Redis Sentinal主要聚焦于高可用</font>，在master宕机时会自动将slave提升为master，继续提供服务。
+- <font color=#FF000 >Redis Cluster主要聚焦于扩展性</font>，在单个redis内存不足时，使用Cluster进行分片存储。
 
 
 #### Redis 的同步机制了解么？
@@ -76,7 +76,7 @@ Redis Sentinal和Redis Cluster的区别主要在于侧重点不同:
 
 <font color=#FF000 >主从同步</font>。第一次同步时，主节点做一次<font color=#FF000 >bgsave</font>，并同时将后续修改操作记录到内存buffer，待完成后将rdb文件全量同步到复制节点，复制节点接受完成后将rdb镜像加载到内存。加载完成后，再通知主节点将<font color=#FF000 >期间修改的操作记录</font>同步到复制节点进行重放就完成了同步过程。
 
-全备份过程中，在slave启动时，会向其master发送一条SYNC消息，master收到slave的这条消息之后，将可能启动后台进程进行备份，备份完成之后就将备份的数据发送给slave，初始时的全同步机制是这样的：
+<font color=#FF000 >全备份过程中，在slave启动时，会向其master发送一条SYNC消息</font>，master收到slave的这条消息之后，将可能启动后台进程进行备份，备份完成之后就将备份的数据发送给slave，初始时的全同步机制是这样的：
 
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/41856c14-f8ee-426b-99d8-f77ef21eb326.png)
 
