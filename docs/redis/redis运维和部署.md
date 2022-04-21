@@ -1,3 +1,10 @@
+---
+title: 2022年Redis最新面试题 - Redis运维和部署
+author: 漫步coding
+date: '2022-4-19'
+---
+
+
 ### 运维和部署
 
 - Redis 如何设置密码及验证密码？
