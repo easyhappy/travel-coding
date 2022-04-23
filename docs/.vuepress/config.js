@@ -64,6 +64,7 @@ module.exports = {
               children: [
                   { title: "前言", path: "/leetcode/前言", collapsable: false},
                   { title: "0001 - 两数之和", path: "/leetcode/001_两数之和", collapsable: false},
+                  { title: "0002 - 两数相加", path: "/leetcode/002_两数相加", collapsable: false},
                   { title: "更多内容, 漫步coding正在整理中...", collapsable: false},
               ]
             },
