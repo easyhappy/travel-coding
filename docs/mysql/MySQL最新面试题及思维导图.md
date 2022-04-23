@@ -120,14 +120,13 @@ MyISAM存储引擎使用B+Tree作为索引结构，叶节点的data域存放的�
 
 **16、MySQL的关联查询语句你会那些？**
 
-六种关联查询
+几种关联查询
 
 - 1.交叉连接（CROSS JOIN）
 - 2.内连接（INNER JOIN）
 - 3.外连接（LEFT JOIN/RIGHT JOIN）
 - 4.联合查询（UNION与UNION ALL）
 - 5.全连接（FULL JOIN）
-- 6.交叉连接（CROSS JOIN）
 
 平时用到比较多的是内连和外连， 以及联合查询
 
@@ -146,7 +145,14 @@ b)、外连接 分为: 左外连接、右外连接
 c)、联合查询（UNION与UNION ALL）
 
 就是把多个结果集集中在一起，UNION前的结果为基准，需要注意的是联合查询的列数要相等，相同的记录行会合并
-如果使用UNION ALL，不会合并重复的记录行3.效率 UNION 高于 UNION ALL
+
+
+从效率上说，UNION ALL 要比UNION快很多，所以，如果可以确认合并的两个结果集中不包含重复数据且不需要排序时的话，那么就使用UNION ALL。
+
+```
+UNION去重且排序
+UNION ALL不去重不排序
+```
 
 d)、全连接（FULL JOIN）
 
