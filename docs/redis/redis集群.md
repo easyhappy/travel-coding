@@ -94,7 +94,7 @@ Redis Sentinal和Redis Cluster的区别主要在于侧重点不同:
 
 虽然使用CRC16算法最多可以分配65535（2^16-1）个槽位，65535=65k，压缩后就是8k（8 * 8 (8 bit) * 1024(1k) =65K），也就是说需要需要8k的心跳包，Redis作者认为这样做不太值得；并且一般情况下一个redis集群不会有超过1000个master节点，所以16k的槽位是个比较合适的选择。
 
-关于Redis作者讨论为什么这么设计, 可以[看这里](https://github.com/redis/redis/issues/2576)。
+关于Redis作者讨论为什么这么设计, 可以[看这里](https://mp.weixin.qq.com/s?__biz=MzIyMjIxMjM3MQ==&mid=2247484112&idx=1&sn=8b1088ac8596fedca19afe9b66093fdc&chksm=e831baacdf4633baf1b286887fa1bdec232300ea733ee6c198815d5ae354941379aa3d04cc7d#rd)。
 
 漫步coding还在整理中, 敬请期待, 可以关注公众号: `漫步coding` 了解最新情况...
 
