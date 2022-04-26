@@ -1308,3 +1308,8 @@ Redis自身实现的字符串结构有如下特点:
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/246a8b53-1f60-48ec-a4bc-5b077aeaef6a.png)
 
 
+也欢迎关注我的公众号: `漫步coding`。 一起交流, 在coding的世界里漫步, 回复: <font color=#FF000 >`redis`</font>, 免费获取最新Redis面试题(含答案)。
+
+![](https://images.xiaozhuanlan.com/uploads/photo/2022/5cb0c91e-fd83-4a04-8df6-65fb602b3834.png)
+
+希望这篇文章可以帮助大家, 也希望大家都能找到的好工作。

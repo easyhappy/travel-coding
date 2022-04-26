@@ -96,6 +96,8 @@ Redis Sentinal和Redis Cluster的区别主要在于侧重点不同:
 
 关于Redis作者讨论为什么这么设计, 可以[看这里](https://mp.weixin.qq.com/s?__biz=MzIyMjIxMjM3MQ==&mid=2247484112&idx=1&sn=8b1088ac8596fedca19afe9b66093fdc&chksm=e831baacdf4633baf1b286887fa1bdec232300ea733ee6c198815d5ae354941379aa3d04cc7d#rd)。
 
-漫步coding还在整理中, 敬请期待, 可以关注公众号: `漫步coding` 了解最新情况...
+也欢迎关注我的公众号: `漫步coding`。 一起交流, 在coding的世界里漫步, 回复: <font color=#FF000 >`redis`</font>, 免费获取最新Redis面试题(含答案)。
 
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/5cb0c91e-fd83-4a04-8df6-65fb602b3834.png)
+
+希望这篇文章可以帮助大家, 也希望大家都能找到的好工作。
