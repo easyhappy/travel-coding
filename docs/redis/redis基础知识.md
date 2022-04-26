@@ -168,7 +168,8 @@ Redis 官方站提出了一种权威的基于 Redis 实现分布式锁的方式�
 
 容错性：只要大部分 Redis 节点存活就可以正常提供服务
 
-漫步coding还在整理中, 敬请期待, 可以关注公众号: `漫步coding` 了解最新情况...
-
+也欢迎关注我的公众号: `漫步coding`。 一起交流, 在coding的世界里漫步, 回复: <font color=#FF000 >`redis`</font>, 免费获取最新Redis面试题(含答案)。
 
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/5cb0c91e-fd83-4a04-8df6-65fb602b3834.png)
+
+希望这篇文章可以帮助大家, 也希望大家都能找到的好工作。
