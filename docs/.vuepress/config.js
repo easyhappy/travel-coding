@@ -67,6 +67,7 @@ module.exports = {
                   { title: "0002 - 两数相加", path: "/leetcode/002_两数相加", collapsable: false},
                   { title: "0003 - 无重复字符的最长子串", path: "/leetcode/003_无重复字符的最长子串", collapsable: false},
                   { title: "0004 - 寻找两个正序数组的中位数", path: "/leetcode/004_寻找两个正序数组的中位数", collapsable: false},
+                  { title: "0005 - 最长回文子串", path: "/leetcode/005_最长回文子串", collapsable: false},
                   { title: "更多内容, 漫步coding正在整理中...", collapsable: false},
               ]
             },
