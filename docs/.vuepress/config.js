@@ -70,6 +70,7 @@ module.exports = {
                   { title: "0005 - 最长回文子串", path: "/leetcode/005_最长回文子串", collapsable: false},
                   { title: "0006 - Z字形变换", path: "/leetcode/006_Z字形变换", collapsable: false},
                   { title: "0007 - 整数反转", path: "/leetcode/007_整数反转", collapsable: false},
+                  { title: "0008 - 字符串转换整数atoi", path: "/leetcode/008_字符串转换整数atoi", collapsable: false},
                   { title: "更多内容, 漫步coding正在整理中...", collapsable: false},
               ]
             },
