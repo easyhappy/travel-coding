@@ -72,6 +72,7 @@ module.exports = {
                   { title: "0007 - 整数反转", path: "/leetcode/007_整数反转", collapsable: false},
                   { title: "0008 - 字符串转换整数atoi", path: "/leetcode/008_字符串转换整数atoi", collapsable: false},
                   { title: "0009 - 回文数", path: "/leetcode/009_回文数", collapsable: false},
+                  { title: "0010 - 正则表达式匹配", path: "/leetcode/010_正则表达式匹配", collapsable: false},
                   { title: "更多内容, 漫步coding正在整理中...", collapsable: false},
               ]
             },
