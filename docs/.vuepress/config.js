@@ -75,6 +75,7 @@ module.exports = {
                   { title: "0010 - 正则表达式匹配", path: "/leetcode/010_正则表达式匹配", collapsable: false},
                   { title: "0011 - 盛最多水的容器", path: "/leetcode/011_盛最多水的容器", collapsable: false},
                   { title: "0015 - 三数之和", path: "/leetcode/015_三数之和", collapsable: false},
+                  { title: "017 - 电话号码的字母组合", path: "/leetcode/017_电话号码的字母组合", collapsable: false},
                   { title: "更多内容, 漫步coding正在整理中...", collapsable: false},
               ]
             },
