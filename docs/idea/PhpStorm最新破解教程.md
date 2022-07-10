@@ -62,6 +62,14 @@ https://www.jetbrains.com/zh-cn/phpstorm/download/other.html
 
 3、将下载到的zip包拖拽到编辑器内安装即可
 
+如果拖拽到编辑器提示: 提示不支持的二进制 可以用下面的方法安装:
+
+![](https://images.xiaozhuanlan.com/uploads/photo/2022/35d33996-1d80-4f96-a6da-2261a611297e.png)
+
+选择从disk安装插件，就可以成功了。
+
+![](https://images.xiaozhuanlan.com/uploads/photo/2022/fe5914c3-81ce-46bf-a9bd-2d760de40c9c.png)
+
 4、点击Help -> Eval Reset
 
 勾选: `Auto reset before per restart` 然后点击Reset
