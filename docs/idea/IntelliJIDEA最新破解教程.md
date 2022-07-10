@@ -1,5 +1,5 @@
 ---
-title: 2022年IntelliJ IDEA工具介绍
+title: 2022年IntelliJIDEA最新破解教程
 author: 漫步coding
 date: '2022-3-12'
 ---
@@ -73,6 +73,14 @@ https://www.jetbrains.com/zh-cn/idea/download/other.html
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/5cb0c91e-fd83-4a04-8df6-65fb602b3834.png)
 
 3、将下载到的zip包拖拽到编辑器内安装即可
+
+如果拖拽到编辑器提示: 提示不支持的二进制 可以用下面的方法安装:
+
+![](https://images.xiaozhuanlan.com/uploads/photo/2022/35d33996-1d80-4f96-a6da-2261a611297e.png)
+
+选择从disk安装插件，就可以成功了。
+
+![](https://images.xiaozhuanlan.com/uploads/photo/2022/fe5914c3-81ce-46bf-a9bd-2d760de40c9c.png)
 
 4、点击Help -> Eval Reset
 

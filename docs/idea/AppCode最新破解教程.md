@@ -77,6 +77,14 @@ AppCode破解步骤
 
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/4664b086-71c6-4a9c-bfc6-12576f37ecf4.png)
 
+如果拖拽到编辑器提示: 提示不支持的二进制 可以用下面的方法安装:
+
+![](https://images.xiaozhuanlan.com/uploads/photo/2022/35d33996-1d80-4f96-a6da-2261a611297e.png)
+
+选择从disk安装插件，就可以成功了。
+
+![](https://images.xiaozhuanlan.com/uploads/photo/2022/fe5914c3-81ce-46bf-a9bd-2d760de40c9c.png)
+
 
 3、如图，勾选: `Auto reset before per restart` ， 然后点击Reset, 然后可以看到Last Reset Time 就改变了。
 
