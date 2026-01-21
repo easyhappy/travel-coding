@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LeetCode高频算法面试题 - 009 -  回文数 | 漫步coding</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="漫步coding的博客">
+    
+    <link rel="preload" href="/travel-coding/assets/css/0.styles.7d378bbe.css" as="style"><link rel="preload" href="/travel-coding/assets/js/app.1e4d89e5.js" as="script"><link rel="preload" href="/travel-coding/assets/js/3.ede2fe1f.js" as="script"><link rel="preload" href="/travel-coding/assets/js/1.a10e0e04.js" as="script"><link rel="preload" href="/travel-coding/assets/js/33.e929bb2c.js" as="script"><link rel="prefetch" href="/travel-coding/assets/js/10.782ea047.js"><link rel="prefetch" href="/travel-coding/assets/js/11.f348df30.js"><link rel="prefetch" href="/travel-coding/assets/js/12.5d41d3db.js"><link rel="prefetch" href="/travel-coding/assets/js/13.83e52b61.js"><link rel="prefetch" href="/travel-coding/assets/js/14.498c5371.js"><link rel="prefetch" href="/travel-coding/assets/js/15.b7a26d19.js"><link rel="prefetch" href="/travel-coding/assets/js/16.a281d884.js"><link rel="prefetch" href="/travel-coding/assets/js/17.95a3c439.js"><link rel="prefetch" href="/travel-coding/assets/js/18.4b680e24.js"><link rel="prefetch" href="/travel-coding/assets/js/19.03555668.js"><link rel="prefetch" href="/travel-coding/assets/js/20.051d6ca6.js"><link rel="prefetch" href="/travel-coding/assets/js/21.5347d618.js"><link rel="prefetch" href="/travel-coding/assets/js/22.f45c352e.js"><link rel="prefetch" href="/travel-coding/assets/js/23.87f2c624.js"><link rel="prefetch" href="/travel-coding/assets/js/24.11aef9af.js"><link rel="prefetch" href="/travel-coding/assets/js/25.42b443d2.js"><link rel="prefetch" href="/travel-coding/assets/js/26.b6448f9f.js"><link rel="prefetch" href="/travel-coding/assets/js/27.5eb78443.js"><link rel="prefetch" href="/travel-coding/assets/js/28.332fbef6.js"><link rel="prefetch" href="/travel-coding/assets/js/29.573d70a3.js"><link rel="prefetch" href="/travel-coding/assets/js/30.a2d5503f.js"><link rel="prefetch" href="/travel-coding/assets/js/31.3d13c564.js"><link rel="prefetch" href="/travel-coding/assets/js/32.0addfa48.js"><link rel="prefetch" href="/travel-coding/assets/js/34.82d904ef.js"><link rel="prefetch" href="/travel-coding/assets/js/35.54d48927.js"><link rel="prefetch" href="/travel-coding/assets/js/36.b72500c8.js"><link rel="prefetch" href="/travel-coding/assets/js/37.6b457d25.js"><link rel="prefetch" href="/travel-coding/assets/js/38.af698f66.js"><link rel="prefetch" href="/travel-coding/assets/js/39.1069d264.js"><link rel="prefetch" href="/travel-coding/assets/js/4.379f99a7.js"><link rel="prefetch" href="/travel-coding/assets/js/40.5e3c25be.js"><link rel="prefetch" href="/travel-coding/assets/js/41.186fd60e.js"><link rel="prefetch" href="/travel-coding/assets/js/42.fcc1c76d.js"><link rel="prefetch" href="/travel-coding/assets/js/43.646b4833.js"><link rel="prefetch" href="/travel-coding/assets/js/44.9448ec9a.js"><link rel="prefetch" href="/travel-coding/assets/js/45.1220bdda.js"><link rel="prefetch" href="/travel-coding/assets/js/46.441af856.js"><link rel="prefetch" href="/travel-coding/assets/js/47.9c7290a8.js"><link rel="prefetch" href="/travel-coding/assets/js/48.1b8ff75a.js"><link rel="prefetch" href="/travel-coding/assets/js/49.00afcebb.js"><link rel="prefetch" href="/travel-coding/assets/js/5.15fdc57a.js"><link rel="prefetch" href="/travel-coding/assets/js/50.81eba49a.js"><link rel="prefetch" href="/travel-coding/assets/js/51.07cb7279.js"><link rel="prefetch" href="/travel-coding/assets/js/52.9510b239.js"><link rel="prefetch" href="/travel-coding/assets/js/53.748fe618.js"><link rel="prefetch" href="/travel-coding/assets/js/54.27557725.js"><link rel="prefetch" href="/travel-coding/assets/js/55.cc4ad1ff.js"><link rel="prefetch" href="/travel-coding/assets/js/56.909cf4d6.js"><link rel="prefetch" href="/travel-coding/assets/js/57.0360e2a9.js"><link rel="prefetch" href="/travel-coding/assets/js/58.f3b4f2c2.js"><link rel="prefetch" href="/travel-coding/assets/js/59.e830271c.js"><link rel="prefetch" href="/travel-coding/assets/js/6.97ed89af.js"><link rel="prefetch" href="/travel-coding/assets/js/60.0b3392d2.js"><link rel="prefetch" href="/travel-coding/assets/js/61.409c73d5.js"><link rel="prefetch" href="/travel-coding/assets/js/62.6b3223df.js"><link rel="prefetch" href="/travel-coding/assets/js/63.490157e2.js"><link rel="prefetch" href="/travel-coding/assets/js/64.607de95e.js"><link rel="prefetch" href="/travel-coding/assets/js/65.a12be325.js"><link rel="prefetch" href="/travel-coding/assets/js/66.11c00f96.js"><link rel="prefetch" href="/travel-coding/assets/js/67.2a4361bf.js"><link rel="prefetch" href="/travel-coding/assets/js/7.98e69c9d.js"><link rel="prefetch" href="/travel-coding/assets/js/8.a760479b.js"><link rel="prefetch" href="/travel-coding/assets/js/9.dcc79b81.js">
+    <link rel="stylesheet" href="/travel-coding/assets/css/0.styles.7d378bbe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>漫步coding</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>漫步coding的博客</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2026
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/travel-coding/" class="home-link router-link-active"><!----> <span class="site-name">漫步coding</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><!----> <!----> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>51</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>0</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <!----> <ul class="sidebar-links"><li><a href="/travel-coding/" aria-current="page" class="sidebar-link">首页</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>2026年MySQL最新面试题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>2026年Redis最新面试题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>LeetCode高频算法面试题</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/travel-coding/leetcode/前言.html" class="sidebar-link">前言</a></li><li><a href="/travel-coding/leetcode/001_两数之和.html" class="sidebar-link">0001 - 两数之和</a></li><li><a href="/travel-coding/leetcode/002_两数相加.html" class="sidebar-link">0002 - 两数相加</a></li><li><a href="/travel-coding/leetcode/003_无重复字符的最长子串.html" class="sidebar-link">0003 - 无重复字符的最长子串</a></li><li><a href="/travel-coding/leetcode/004_寻找两个正序数组的中位数.html" class="sidebar-link">0004 - 寻找两个正序数组的中位数</a></li><li><a href="/travel-coding/leetcode/005_最长回文子串.html" class="sidebar-link">0005 - 最长回文子串</a></li><li><a href="/travel-coding/leetcode/006_Z字形变换.html" class="sidebar-link">0006 - Z字形变换</a></li><li><a href="/travel-coding/leetcode/007_整数反转.html" class="sidebar-link">0007 - 整数反转</a></li><li><a href="/travel-coding/leetcode/008_字符串转换整数atoi.html" class="sidebar-link">0008 - 字符串转换整数atoi</a></li><li><a href="/travel-coding/leetcode/009_回文数.html" class="active sidebar-link">0009 - 回文数</a></li><li><a href="/travel-coding/leetcode/010_正则表达式匹配.html" class="sidebar-link">0010 - 正则表达式匹配</a></li><li><a href="/travel-coding/leetcode/011_盛最多水的容器.html" class="sidebar-link">0011 - 盛最多水的容器</a></li><li><a href="/travel-coding/leetcode/015_三数之和.html" class="sidebar-link">0015 - 三数之和</a></li><li><a href="/travel-coding/leetcode/017_电话号码的字母组合.html" class="sidebar-link">017 - 电话号码的字母组合</a></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>更多内容, 漫步coding正在整理中...</span> <!----></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开发工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>公众号</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>LeetCode高频算法面试题 - 009 -  回文数</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2026
+        </a></span></div></div> <div data-v-130b300a><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">LeetCode高频算法面试题 - 009 -  回文数</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>漫步coding</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>5/16/2022</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><p>给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。</p> <p>回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。</p> <p>例如，121 是回文，而 123 不是。</p> <p><font color="#FF000">题目难度: ★, 简单</font></p> <p>示例 1：</p> <div class="language- extra-class"><pre class="language-text"><code>输入：x = 121
+输出：true
+</code></pre></div><p>示例 2：</p> <div class="language- extra-class"><pre class="language-text"><code>输入：x = -121
+输出：false
+解释：从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。
+</code></pre></div><p>示例 3：</p> <div class="language- extra-class"><pre class="language-text"><code>输入：x = 10
+输出：false
+解释：从右向左读, 为 01 。因此它不是一个回文数。
+</code></pre></div><p></p> <p>提示：</p> <div class="language- extra-class"><pre class="language-text"><code>-2^31 &lt;= x &lt;= 2^31 - 1
+</code></pre></div><p>进阶：你能不将整数转为字符串来解决这个问题吗？</p> <h3 id="代码实现"><a href="#代码实现" class="header-anchor">#</a> 代码实现</h3> <blockquote><p>tips: 以下代码是使用Go代码实现的不同解法, 文章最后可以看C++、C、Java、Python实现</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>func isPalindrome(x int) bool {
+    if x &lt; 0 {
+        return false
+    }
+    div := 1
+    // 得到对应位数的最小值, 例如：6543，那么div的值就是1000
+    for x / div &gt;=  10 {
+        div *= 10
+    }
+    for x != 0 {
+        // 得到左边第一位的值
+        left := x / div
+        // 得到右边最后一位的值
+        right := x % 10
+        if left != right {
+            return false
+        }
+        // 去掉第一位和最后一位
+        // 例如：（ 6543 - 6 * 1000 ）/ 10 = 54
+        x = (x - left * div) / 10
+
+        // 因为去掉了最右边和最左边两位，因此div也相应的调整
+        div /= 100
+    }
+    return true
+}
+</code></pre></div><p><img src="https://images.xiaozhuanlan.com/uploads/photo/2022/1e5b9b48-54c2-477d-90ec-1792abd5ca9a.png" alt=""></p> <h3 id="其他语言实现"><a href="#其他语言实现" class="header-anchor">#</a> 其他语言实现</h3> <p>1、Java</p> <p>主要思路:</p> <ul><li>如果是负数则一定不是回文数，直接返回 false</li> <li>如果是正数，则将其倒序数值计算出来，然后比较和原数值是否相等</li> <li>如果是回文数则相等返回 true，如果不是则不相等 false</li> <li>比如 123 的倒序 321，不相等；121 的倒序 121，相等</li></ul> <p>important:  <font color="#FF000">旋转后的数字可能越界</font>， 比如1234567899，旋转后就是9987654321大于了2^31了。当出现越界的情况就时，可以肯定这个数字就不是回文数。</p> <div class="language- extra-class"><pre class="language-text"><code>class Solution {
+    public boolean isPalindrome(int x) {
+        if(x &lt; 0)
+            return false;
+        int cur = 0;
+        int num = x;
+        while(num != 0) {
+            cur = cur * 10 + num % 10;
+            num /= 10;
+        }
+        return cur == x;
+    }
+}
+</code></pre></div><p><img src="https://images.xiaozhuanlan.com/uploads/photo/2022/f6dd56bf-dda9-46ec-ad1c-90bce648fe2c.png" alt=""></p> <p>2、Python3</p> <div class="language- extra-class"><pre class="language-text"><code>class Solution:
+    def isPalindrome(self, x: int) -&gt; bool:
+        if x &lt; 0:
+            return False
+        res, y = 0, x
+        while y != 0:
+            res = res*10 +y%10
+            y //=10
+        return res == x
+</code></pre></div><p><img src="https://images.xiaozhuanlan.com/uploads/photo/2022/1450cb06-1a73-4c0c-88c8-c89c6ee78f45.png" alt=""></p> <p>3、C++</p> <div class="language- extra-class"><pre class="language-text"><code>class Solution {
+public:
+    bool isPalindrome(int x) 
+    {   
+        if(x&lt;0)
+            return false;   
+        
+        vector&lt;int&gt; v;    
+        while(x&gt;0)
+        {
+            int a=x%10;  
+            v.push_back(a);
+            x=x/10;
+        }
+
+        // 两头开始比较向量中的数字
+        int len=v.size();
+        int j=0;
+        while(j&lt;len/2)
+        {
+            if(v[j]!=v[len-j-1])
+                return false;
+            j++;
+        }
+        return true;
+    }
+};
+</code></pre></div><p><img src="https://images.xiaozhuanlan.com/uploads/photo/2022/6b13e11d-b2f3-45ee-9f56-1a13888b8d07.png" alt=""></p> <h3 id="几种语言运行效果对比"><a href="#几种语言运行效果对比" class="header-anchor">#</a> 几种语言运行效果对比</h3> <p><img src="https://images.xiaozhuanlan.com/uploads/photo/2022/2ae5b094-1c61-48a8-b1e7-10ad0c06cca5.png" alt=""></p> <p>也欢迎关注我的公众号: <code>漫步coding</code>。 一起交流, 在coding的世界里漫步。</p> <p><img src="https://images.xiaozhuanlan.com/uploads/photo/2022/5cb0c91e-fd83-4a04-8df6-65fb602b3834.png" alt=""></p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/travel-coding/leetcode/008_字符串转换整数atoi.html" class="prev">
+            0008 - 字符串转换整数atoi
+          </a></span> <span class="next"><a href="/travel-coding/leetcode/010_正则表达式匹配.html">
+            0010 - 正则表达式匹配
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-cb1513f6></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/travel-coding/assets/js/app.1e4d89e5.js" defer></script><script src="/travel-coding/assets/js/3.ede2fe1f.js" defer></script><script src="/travel-coding/assets/js/1.a10e0e04.js" defer></script><script src="/travel-coding/assets/js/33.e929bb2c.js" defer></script>
+  </body>
+</html>

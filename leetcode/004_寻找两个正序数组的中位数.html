@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LeetCode高频算法面试题 - 004 - 寻找两个正序数组的中位数 | 漫步coding</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="漫步coding的博客">
+    
+    <link rel="preload" href="/travel-coding/assets/css/0.styles.7d378bbe.css" as="style"><link rel="preload" href="/travel-coding/assets/js/app.1e4d89e5.js" as="script"><link rel="preload" href="/travel-coding/assets/js/3.ede2fe1f.js" as="script"><link rel="preload" href="/travel-coding/assets/js/1.a10e0e04.js" as="script"><link rel="preload" href="/travel-coding/assets/js/28.332fbef6.js" as="script"><link rel="prefetch" href="/travel-coding/assets/js/10.782ea047.js"><link rel="prefetch" href="/travel-coding/assets/js/11.f348df30.js"><link rel="prefetch" href="/travel-coding/assets/js/12.5d41d3db.js"><link rel="prefetch" href="/travel-coding/assets/js/13.83e52b61.js"><link rel="prefetch" href="/travel-coding/assets/js/14.498c5371.js"><link rel="prefetch" href="/travel-coding/assets/js/15.b7a26d19.js"><link rel="prefetch" href="/travel-coding/assets/js/16.a281d884.js"><link rel="prefetch" href="/travel-coding/assets/js/17.95a3c439.js"><link rel="prefetch" href="/travel-coding/assets/js/18.4b680e24.js"><link rel="prefetch" href="/travel-coding/assets/js/19.03555668.js"><link rel="prefetch" href="/travel-coding/assets/js/20.051d6ca6.js"><link rel="prefetch" href="/travel-coding/assets/js/21.5347d618.js"><link rel="prefetch" href="/travel-coding/assets/js/22.f45c352e.js"><link rel="prefetch" href="/travel-coding/assets/js/23.87f2c624.js"><link rel="prefetch" href="/travel-coding/assets/js/24.11aef9af.js"><link rel="prefetch" href="/travel-coding/assets/js/25.42b443d2.js"><link rel="prefetch" href="/travel-coding/assets/js/26.b6448f9f.js"><link rel="prefetch" href="/travel-coding/assets/js/27.5eb78443.js"><link rel="prefetch" href="/travel-coding/assets/js/29.573d70a3.js"><link rel="prefetch" href="/travel-coding/assets/js/30.a2d5503f.js"><link rel="prefetch" href="/travel-coding/assets/js/31.3d13c564.js"><link rel="prefetch" href="/travel-coding/assets/js/32.0addfa48.js"><link rel="prefetch" href="/travel-coding/assets/js/33.e929bb2c.js"><link rel="prefetch" href="/travel-coding/assets/js/34.82d904ef.js"><link rel="prefetch" href="/travel-coding/assets/js/35.54d48927.js"><link rel="prefetch" href="/travel-coding/assets/js/36.b72500c8.js"><link rel="prefetch" href="/travel-coding/assets/js/37.6b457d25.js"><link rel="prefetch" href="/travel-coding/assets/js/38.af698f66.js"><link rel="prefetch" href="/travel-coding/assets/js/39.1069d264.js"><link rel="prefetch" href="/travel-coding/assets/js/4.379f99a7.js"><link rel="prefetch" href="/travel-coding/assets/js/40.5e3c25be.js"><link rel="prefetch" href="/travel-coding/assets/js/41.186fd60e.js"><link rel="prefetch" href="/travel-coding/assets/js/42.fcc1c76d.js"><link rel="prefetch" href="/travel-coding/assets/js/43.646b4833.js"><link rel="prefetch" href="/travel-coding/assets/js/44.9448ec9a.js"><link rel="prefetch" href="/travel-coding/assets/js/45.1220bdda.js"><link rel="prefetch" href="/travel-coding/assets/js/46.441af856.js"><link rel="prefetch" href="/travel-coding/assets/js/47.9c7290a8.js"><link rel="prefetch" href="/travel-coding/assets/js/48.1b8ff75a.js"><link rel="prefetch" href="/travel-coding/assets/js/49.00afcebb.js"><link rel="prefetch" href="/travel-coding/assets/js/5.15fdc57a.js"><link rel="prefetch" href="/travel-coding/assets/js/50.81eba49a.js"><link rel="prefetch" href="/travel-coding/assets/js/51.07cb7279.js"><link rel="prefetch" href="/travel-coding/assets/js/52.9510b239.js"><link rel="prefetch" href="/travel-coding/assets/js/53.748fe618.js"><link rel="prefetch" href="/travel-coding/assets/js/54.27557725.js"><link rel="prefetch" href="/travel-coding/assets/js/55.cc4ad1ff.js"><link rel="prefetch" href="/travel-coding/assets/js/56.909cf4d6.js"><link rel="prefetch" href="/travel-coding/assets/js/57.0360e2a9.js"><link rel="prefetch" href="/travel-coding/assets/js/58.f3b4f2c2.js"><link rel="prefetch" href="/travel-coding/assets/js/59.e830271c.js"><link rel="prefetch" href="/travel-coding/assets/js/6.97ed89af.js"><link rel="prefetch" href="/travel-coding/assets/js/60.0b3392d2.js"><link rel="prefetch" href="/travel-coding/assets/js/61.409c73d5.js"><link rel="prefetch" href="/travel-coding/assets/js/62.6b3223df.js"><link rel="prefetch" href="/travel-coding/assets/js/63.490157e2.js"><link rel="prefetch" href="/travel-coding/assets/js/64.607de95e.js"><link rel="prefetch" href="/travel-coding/assets/js/65.a12be325.js"><link rel="prefetch" href="/travel-coding/assets/js/66.11c00f96.js"><link rel="prefetch" href="/travel-coding/assets/js/67.2a4361bf.js"><link rel="prefetch" href="/travel-coding/assets/js/7.98e69c9d.js"><link rel="prefetch" href="/travel-coding/assets/js/8.a760479b.js"><link rel="prefetch" href="/travel-coding/assets/js/9.dcc79b81.js">
+    <link rel="stylesheet" href="/travel-coding/assets/css/0.styles.7d378bbe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>漫步coding</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>漫步coding的博客</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2026
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/travel-coding/" class="home-link router-link-active"><!----> <span class="site-name">漫步coding</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><!----> <!----> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>51</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>0</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <!----> <ul class="sidebar-links"><li><a href="/travel-coding/" aria-current="page" class="sidebar-link">首页</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>2026年MySQL最新面试题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>2026年Redis最新面试题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>LeetCode高频算法面试题</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/travel-coding/leetcode/前言.html" class="sidebar-link">前言</a></li><li><a href="/travel-coding/leetcode/001_两数之和.html" class="sidebar-link">0001 - 两数之和</a></li><li><a href="/travel-coding/leetcode/002_两数相加.html" class="sidebar-link">0002 - 两数相加</a></li><li><a href="/travel-coding/leetcode/003_无重复字符的最长子串.html" class="sidebar-link">0003 - 无重复字符的最长子串</a></li><li><a href="/travel-coding/leetcode/004_寻找两个正序数组的中位数.html" class="active sidebar-link">0004 - 寻找两个正序数组的中位数</a></li><li><a href="/travel-coding/leetcode/005_最长回文子串.html" class="sidebar-link">0005 - 最长回文子串</a></li><li><a href="/travel-coding/leetcode/006_Z字形变换.html" class="sidebar-link">0006 - Z字形变换</a></li><li><a href="/travel-coding/leetcode/007_整数反转.html" class="sidebar-link">0007 - 整数反转</a></li><li><a href="/travel-coding/leetcode/008_字符串转换整数atoi.html" class="sidebar-link">0008 - 字符串转换整数atoi</a></li><li><a href="/travel-coding/leetcode/009_回文数.html" class="sidebar-link">0009 - 回文数</a></li><li><a href="/travel-coding/leetcode/010_正则表达式匹配.html" class="sidebar-link">0010 - 正则表达式匹配</a></li><li><a href="/travel-coding/leetcode/011_盛最多水的容器.html" class="sidebar-link">0011 - 盛最多水的容器</a></li><li><a href="/travel-coding/leetcode/015_三数之和.html" class="sidebar-link">0015 - 三数之和</a></li><li><a href="/travel-coding/leetcode/017_电话号码的字母组合.html" class="sidebar-link">017 - 电话号码的字母组合</a></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>更多内容, 漫步coding正在整理中...</span> <!----></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开发工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>公众号</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>LeetCode高频算法面试题 - 004 - 寻找两个正序数组的中位数</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2026
+        </a></span></div></div> <div data-v-130b300a><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">LeetCode高频算法面试题 - 004 - 寻找两个正序数组的中位数</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>漫步coding</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>4/26/2022</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><p>给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的 中位数 。</p> <p>算法的时间复杂度应该为 O(log (m+n)) 。</p> <p><font color="#FF000">题目难度: ★★★, 中等</font></p> <p>示例 1：</p> <div class="language- extra-class"><pre class="language-text"><code>输入：nums1 = [1,3], nums2 = [2]
+输出：2.00000
+解释：合并数组 = [1,2,3] ，中位数 2
+</code></pre></div><p>示例 2：</p> <div class="language- extra-class"><pre class="language-text"><code>输入：nums1 = [1,2], nums2 = [3,4]
+输出：2.50000
+解释：合并数组 = [1,2,3,4] ，中位数 (2 + 3) / 2 = 2.5
+</code></pre></div><p></p> <p>提示：</p> <div class="language- extra-class"><pre class="language-text"><code>nums1.length == m
+nums2.length == n
+0 &lt;= m &lt;= 1000
+0 &lt;= n &lt;= 1000
+1 &lt;= m + n &lt;= 2000
+-106 &lt;= nums1[i], nums2[i] &lt;= 106
+</code></pre></div><h3 id="代码实现"><a href="#代码实现" class="header-anchor">#</a> 代码实现</h3> <blockquote><p>tips: 以下代码是使用Go代码实现的不同解法, 文章最后可以看C++、C、Java、Python实现</p></blockquote> <h4 id="_1、二分法求解"><a href="#_1、二分法求解" class="header-anchor">#</a> 1、二分法求解</h4> <p>此题关键在于通过时间复杂度Log(M+N)的限制，想到可能需要用到二分法求解,但二分法不适用于两个数组， 因此我们需要通过某种方法将两个数组的二分法转换为一个数组的二分法。</p> <p>首先，我们理解什么中位数：指的是该数左右个数相等。</p> <p>比如：odd : [1,| 2 |,3]，2 就是这个数组的中位数，左右两边都只要 1 位；</p> <p>even: [1,| 2, 3 |,4]，2,3 就是这个数组的中位数，左右两边 1 位；</p> <p>那么，现在我们有两个数组：</p> <div class="language- extra-class"><pre class="language-text"><code>num1: [a1,a2,a3,...an]
+
+nums2: [b1,b2,b3,...bn]
+
+[nums1[:left1],nums2[:left2] | nums1[left1:], nums2[left2:]]
+</code></pre></div><p>只要保证左右两边 个数 相同，中位数就在 | 这个边界旁边产生。</p> <p>如何找边界值，我们可以用二分法，我们先确定 num1 取 m1 个数的左半边，那么 num2 取 m2 = (m+n+1)/2 - m1 的左半边，找到合适的 m1，就用二分法找。</p> <p>当 [ [a1],[b1,b2,b3] | [a2,..an],[b4,...bn] ]</p> <p>我们只需要比较 b3 和 a2 的关系的大小，就可以知道这种分法是不是准确的！</p> <p>例如：我们令：</p> <div class="language- extra-class"><pre class="language-text"><code>nums1 = [-1,1,3,5,7,9]
+
+nums2 =[2,4,6,8,10,12,14,16]
+
+当 m1 = 4,m2 = 3 ,它的中位数就是median = (num1[m1] + num2[m2])/2
+</code></pre></div><p>时间复杂度：O(log(min(m,n)))O(log(min(m,n)))</p> <p>对于代码中边界情况，大家需要自己琢磨。</p> <div class="language- extra-class"><pre class="language-text"><code>func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
+    m,n := len(nums1),len(nums2)
+    if m&gt;n{
+        return findMedianSortedArrays(nums2,nums1)
+    }
+    iMin ,iMax,laftLen := 0,m,(n+m+1)/2
+    for iMin &lt;= iMax{
+        i := iMin + (iMax-iMin)/2
+        j := laftLen - i
+        if i &gt; iMin &amp;&amp; nums1[i-1] &gt; nums2[j]{
+            iMax = i - 1
+        }else if i &lt; iMax &amp;&amp; nums2[j-1] &gt; nums1[i]{
+            iMin = i + 1
+        }else{
+            leftMax := 0
+            if i == 0{
+                leftMax = nums2[j-1]
+            }else if j == 0{
+                leftMax = nums1[i-1]
+            }else{
+                leftMax = max(nums1[i-1],nums2[j-1])
+            }
+            if (m+n)%2 != 0{
+                return float64(leftMax)
+            }
+            rightMin := 0
+            if i == m {
+                rightMin = nums2[j]
+            }else if j == n{
+                rightMin = nums1[i]
+            }else{
+                rightMin = min(nums1[i],nums2[j])
+            }
+            return float64(leftMax+rightMin)/2.0
+        }
+    }
+  return 0.0
+}
+func max(a,b int)int{
+    if a &gt; b{
+        return a
+    }else{
+        return b
+    }
+}
+
+func min(a,b int )int{
+    if a &gt; b{
+        return b
+    }else{
+        return a
+    }
+}
+</code></pre></div><p><img src="https://images.xiaozhuanlan.com/uploads/photo/2022/3d26bcf8-87a4-4c42-9afe-911e902d17dc.png" alt=""></p> <h3 id="其他语言版本"><a href="#其他语言版本" class="header-anchor">#</a> 其他语言版本</h3> <p>1、Python3</p> <div class="language- extra-class"><pre class="language-text"><code>class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -&gt; float:
+        def getKthElement(k):
+            &quot;&quot;&quot;
+            - 主要思路：要找到第 k (k&gt;1) 小的元素，那么就取 pivot1 = nums1[k/2-1] 和 pivot2 = nums2[k/2-1] 进行比较
+            - 这里的 &quot;/&quot; 表示整除
+            - nums1 中小于等于 pivot1 的元素有 nums1[0 .. k/2-2] 共计 k/2-1 个
+            - nums2 中小于等于 pivot2 的元素有 nums2[0 .. k/2-2] 共计 k/2-1 个
+            - 取 pivot = min(pivot1, pivot2)，两个数组中小于等于 pivot 的元素共计不会超过 (k/2-1) + (k/2-1) &lt;= k-2 个
+            - 这样 pivot 本身最大也只能是第 k-1 小的元素
+            - 如果 pivot = pivot1，那么 nums1[0 .. k/2-1] 都不可能是第 k 小的元素。把这些元素全部 &quot;删除&quot;，剩下的作为新的 nums1 数组
+            - 如果 pivot = pivot2，那么 nums2[0 .. k/2-1] 都不可能是第 k 小的元素。把这些元素全部 &quot;删除&quot;，剩下的作为新的 nums2 数组
+            - 由于我们 &quot;删除&quot; 了一些元素（这些元素都比第 k 小的元素要小），因此需要修改 k 的值，减去删除的数的个数
+            &quot;&quot;&quot;
+            
+            index1, index2 = 0, 0
+            while True:
+                # 特殊情况
+                if index1 == m:
+                    return nums2[index2 + k - 1]
+                if index2 == n:
+                    return nums1[index1 + k - 1]
+                if k == 1:
+                    return min(nums1[index1], nums2[index2])
+
+                # 正常情况
+                newIndex1 = min(index1 + k // 2 - 1, m - 1)
+                newIndex2 = min(index2 + k // 2 - 1, n - 1)
+                pivot1, pivot2 = nums1[newIndex1], nums2[newIndex2]
+                if pivot1 &lt;= pivot2:
+                    k -= newIndex1 - index1 + 1
+                    index1 = newIndex1 + 1
+                else:
+                    k -= newIndex2 - index2 + 1
+                    index2 = newIndex2 + 1
+        
+        m, n = len(nums1), len(nums2)
+        totalLength = m + n
+        if totalLength % 2 == 1:
+            return getKthElement((totalLength + 1) // 2)
+        else:
+            return (getKthElement(totalLength // 2) + getKthElement(totalLength // 2 + 1)) / 2
+</code></pre></div><p><img src="https://images.xiaozhuanlan.com/uploads/photo/2022/f438c074-68e3-455e-a209-dfc1bf5c62eb.png" alt=""></p> <p>2、C++</p> <div class="language- extra-class"><pre class="language-text"><code>class Solution {
+public:
+    int getKthElement(const vector&lt;int&gt;&amp; nums1, const vector&lt;int&gt;&amp; nums2, int k) {
+        /* 主要思路：要找到第 k (k&gt;1) 小的元素，那么就取 pivot1 = nums1[k/2-1] 和 pivot2 = nums2[k/2-1] 进行比较
+         * 这里的 &quot;/&quot; 表示整除
+         * nums1 中小于等于 pivot1 的元素有 nums1[0 .. k/2-2] 共计 k/2-1 个
+         * nums2 中小于等于 pivot2 的元素有 nums2[0 .. k/2-2] 共计 k/2-1 个
+         * 取 pivot = min(pivot1, pivot2)，两个数组中小于等于 pivot 的元素共计不会超过 (k/2-1) + (k/2-1) &lt;= k-2 个
+         * 这样 pivot 本身最大也只能是第 k-1 小的元素
+         * 如果 pivot = pivot1，那么 nums1[0 .. k/2-1] 都不可能是第 k 小的元素。把这些元素全部 &quot;删除&quot;，剩下的作为新的 nums1 数组
+         * 如果 pivot = pivot2，那么 nums2[0 .. k/2-1] 都不可能是第 k 小的元素。把这些元素全部 &quot;删除&quot;，剩下的作为新的 nums2 数组
+         * 由于我们 &quot;删除&quot; 了一些元素（这些元素都比第 k 小的元素要小），因此需要修改 k 的值，减去删除的数的个数
+         */
+
+        int m = nums1.size();
+        int n = nums2.size();
+        int index1 = 0, index2 = 0;
+
+        while (true) {
+            // 边界情况
+            if (index1 == m) {
+                return nums2[index2 + k - 1];
+            }
+            if (index2 == n) {
+                return nums1[index1 + k - 1];
+            }
+            if (k == 1) {
+                return min(nums1[index1], nums2[index2]);
+            }
+
+            // 正常情况
+            int newIndex1 = min(index1 + k / 2 - 1, m - 1);
+            int newIndex2 = min(index2 + k / 2 - 1, n - 1);
+            int pivot1 = nums1[newIndex1];
+            int pivot2 = nums2[newIndex2];
+            if (pivot1 &lt;= pivot2) {
+                k -= newIndex1 - index1 + 1;
+                index1 = newIndex1 + 1;
+            }
+            else {
+                k -= newIndex2 - index2 + 1;
+                index2 = newIndex2 + 1;
+            }
+        }
+    }
+
+    double findMedianSortedArrays(vector&lt;int&gt;&amp; nums1, vector&lt;int&gt;&amp; nums2) {
+        int totalLength = nums1.size() + nums2.size();
+        if (totalLength % 2 == 1) {
+            return getKthElement(nums1, nums2, (totalLength + 1) / 2);
+        }
+        else {
+            return (getKthElement(nums1, nums2, totalLength / 2) + getKthElement(nums1, nums2, totalLength / 2 + 1)) / 2.0;
+        }
+    }
+};
+
+</code></pre></div><p><img src="https://images.xiaozhuanlan.com/uploads/photo/2022/c16b1a51-d325-444f-89fa-5e862e87ca7c.png" alt=""></p> <p>3、Java版本</p> <div class="language- extra-class"><pre class="language-text"><code>class Solution {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int length1 = nums1.length, length2 = nums2.length;
+        int totalLength = length1 + length2;
+        if (totalLength % 2 == 1) {
+            int midIndex = totalLength / 2;
+            double median = getKthElement(nums1, nums2, midIndex + 1);
+            return median;
+        } else {
+            int midIndex1 = totalLength / 2 - 1, midIndex2 = totalLength / 2;
+            double median = (getKthElement(nums1, nums2, midIndex1 + 1) + getKthElement(nums1, nums2, midIndex2 + 1)) / 2.0;
+            return median;
+        }
+    }
+
+    public int getKthElement(int[] nums1, int[] nums2, int k) {
+        /* 主要思路：要找到第 k (k&gt;1) 小的元素，那么就取 pivot1 = nums1[k/2-1] 和 pivot2 = nums2[k/2-1] 进行比较
+         * 这里的 &quot;/&quot; 表示整除
+         * nums1 中小于等于 pivot1 的元素有 nums1[0 .. k/2-2] 共计 k/2-1 个
+         * nums2 中小于等于 pivot2 的元素有 nums2[0 .. k/2-2] 共计 k/2-1 个
+         * 取 pivot = min(pivot1, pivot2)，两个数组中小于等于 pivot 的元素共计不会超过 (k/2-1) + (k/2-1) &lt;= k-2 个
+         * 这样 pivot 本身最大也只能是第 k-1 小的元素
+         * 如果 pivot = pivot1，那么 nums1[0 .. k/2-1] 都不可能是第 k 小的元素。把这些元素全部 &quot;删除&quot;，剩下的作为新的 nums1 数组
+         * 如果 pivot = pivot2，那么 nums2[0 .. k/2-1] 都不可能是第 k 小的元素。把这些元素全部 &quot;删除&quot;，剩下的作为新的 nums2 数组
+         * 由于我们 &quot;删除&quot; 了一些元素（这些元素都比第 k 小的元素要小），因此需要修改 k 的值，减去删除的数的个数
+         */
+
+        int length1 = nums1.length, length2 = nums2.length;
+        int index1 = 0, index2 = 0;
+        int kthElement = 0;
+
+        while (true) {
+            // 边界情况
+            if (index1 == length1) {
+                return nums2[index2 + k - 1];
+            }
+            if (index2 == length2) {
+                return nums1[index1 + k - 1];
+            }
+            if (k == 1) {
+                return Math.min(nums1[index1], nums2[index2]);
+            }
+            
+            // 正常情况
+            int half = k / 2;
+            int newIndex1 = Math.min(index1 + half, length1) - 1;
+            int newIndex2 = Math.min(index2 + half, length2) - 1;
+            int pivot1 = nums1[newIndex1], pivot2 = nums2[newIndex2];
+            if (pivot1 &lt;= pivot2) {
+                k -= (newIndex1 - index1 + 1);
+                index1 = newIndex1 + 1;
+            } else {
+                k -= (newIndex2 - index2 + 1);
+                index2 = newIndex2 + 1;
+            }
+        }
+    }
+}
+</code></pre></div><p><img src="https://images.xiaozhuanlan.com/uploads/photo/2022/8c28f345-cce1-4b15-9ed8-25563c18520d.png" alt=""></p> <h3 id="几种语言运行效果对比"><a href="#几种语言运行效果对比" class="header-anchor">#</a> 几种语言运行效果对比</h3> <p><img src="https://images.xiaozhuanlan.com/uploads/photo/2022/a23ec06b-0036-4d63-aeed-169f3f35bb66.png" alt=""></p> <p>也欢迎关注我的公众号: <code>漫步coding</code>。 一起交流, 在coding的世界里漫步。</p> <p><img src="https://images.xiaozhuanlan.com/uploads/photo/2022/5cb0c91e-fd83-4a04-8df6-65fb602b3834.png" alt=""></p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/travel-coding/leetcode/003_无重复字符的最长子串.html" class="prev">
+            0003 - 无重复字符的最长子串
+          </a></span> <span class="next"><a href="/travel-coding/leetcode/005_最长回文子串.html">
+            0005 - 最长回文子串
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-cb1513f6></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/travel-coding/assets/js/app.1e4d89e5.js" defer></script><script src="/travel-coding/assets/js/3.ede2fe1f.js" defer></script><script src="/travel-coding/assets/js/1.a10e0e04.js" defer></script><script src="/travel-coding/assets/js/28.332fbef6.js" defer></script>
+  </body>
+</html>
