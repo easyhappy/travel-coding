@@ -24,7 +24,7 @@ module.exports = {
             },
             
             {
-                title: '2022年MySQL最新面试题',
+                title: '2026年MySQL最新面试题',
                 collapsable: true, // 不折叠
                 children: [
                     { title: "前言", path: "/mysql/前言", collapsable: false},
@@ -43,7 +43,7 @@ module.exports = {
                 ]
             },
             {
-              title: '2022年Redis最新面试题',
+              title: '2026年Redis最新面试题',
                 collapsable: true, // 不折叠
                 children: [
                     { title: "前言", path: "/redis/前言", collapsable: false},
@@ -80,7 +80,7 @@ module.exports = {
               ]
             },
             // {
-            //   title: '2022年互联网大厂最新面试题',
+            //   title: '2026年互联网大厂最新面试题',
             //     collapsable: true, // 不折叠
             //     children: [
             //         { title: "前言", path: "/interview/前言", collapsable: false},
@@ -92,12 +92,12 @@ module.exports = {
                 title: 'IDEA系列教程',
                 collapsable: true, // 不折叠
                 children: [
-                    { title: "2022年PyCharm最新破解教程", path: "/idea/PyCharm最新破解教程", collapsable: false},
-                    { title: "2022年Goland最新破解教程", path: "/idea/Goland最新破解教程", collapsable: false},
-                    { title: "2022年IntelliJIDEA最新破解教程", path: "/idea/IntelliJIDEA最新破解教程", collapsable: false},
-                    { title: "2022年PhpStorm最新破解教程", path: "/idea/PhpStorm最新破解教程", collapsable: false},
-                    { title: "2022年webStorm最新破解教程", path: "/idea/webStorm最新破解教程", collapsable: false},
-                    { title: "2022年AppCode最新破解教程", path: "/idea/AppCode最新破解教程", collapsable: false},
+                    { title: "2026年PyCharm最新破解教程", path: "/idea/PyCharm最新破解教程", collapsable: false},
+                    { title: "2026年Goland最新破解教程", path: "/idea/Goland最新破解教程", collapsable: false},
+                    { title: "2026年IntelliJIDEA最新破解教程", path: "/idea/IntelliJIDEA最新破解教程", collapsable: false},
+                    { title: "2026年PhpStorm最新破解教程", path: "/idea/PhpStorm最新破解教程", collapsable: false},
+                    { title: "2026年webStorm最新破解教程", path: "/idea/webStorm最新破解教程", collapsable: false},
+                    { title: "2026年AppCode最新破解教程", path: "/idea/AppCode最新破解教程", collapsable: false},
                 ]
             },
 
@@ -105,7 +105,7 @@ module.exports = {
               title: '开发工具',
                 collapsable: true, // 不折叠
                 children: [
-                    { title: "2022年最新Charles使用教程(文中含激活码)", path: "/tools/最新Charles使用教程", collapsable: false},
+                    { title: "2026年最新Charles使用教程(文中含激活码)", path: "/tools/最新Charles使用教程", collapsable: false},
                     { title: "VuePress和GithubPage博客搭建", path: "/tools/VuePress和GithubPage博客搭建", collapsable: false},
                 ]
             },

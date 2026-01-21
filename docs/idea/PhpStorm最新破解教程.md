@@ -1,5 +1,5 @@
 ---
-title: 2022年PhpStorm最新破解教程
+title: 2026年PhpStorm最新破解教程
 author: 漫步coding
 date: '2022-3-3'
 ---

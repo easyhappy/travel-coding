@@ -1,5 +1,5 @@
 ---
-title: 2022年Redis最新面试题 - Redis事务
+title: 2026年Redis最新面试题 - Redis事务
 author: 漫步coding
 date: '2022-4-9'
 ---

@@ -1,5 +1,5 @@
 ---
-title: 2022年Redis最新面试题 - Redis缓存问题
+title: 2026年Redis最新面试题 - Redis缓存问题
 author: 漫步coding
 date: '2022-4-12'
 ---

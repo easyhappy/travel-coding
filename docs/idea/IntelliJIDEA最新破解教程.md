@@ -1,5 +1,5 @@
 ---
-title: 2022年IntelliJIDEA最新破解教程
+title: 2026年IntelliJIDEA最新破解教程
 author: 漫步coding
 date: '2022-3-12'
 ---

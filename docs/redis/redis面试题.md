@@ -53,7 +53,7 @@ https://www.zhihu.com/question/319817091/answer/2110995185
 
 https://segmentfault.com/a/1190000022029639
 
-2022年01月03日整理发布：Redis的那些常见面试题总结附答案解析
+2026年01月03日整理发布：Redis的那些常见面试题总结附答案解析
 https://www.jxshyzhx.com/guonei/202201/36641.html
 
 https://juejin.cn/post/6844904017387077640
