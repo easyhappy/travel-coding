@@ -8,7 +8,7 @@ date: '2022-3-28'
 
 ### 博客地址如下：
 
-- 博客地址: [https://manbucoding.com/travel-coding/](https://manbucoding.com/travel-coding/)
+- 博客地址: [https://easyhappy.github.io/travel-coding/](https://easyhappy.github.io/travel-coding/)
 - 代码地址: [https://github.com/easyhappy/travel-coding](https://github.com/easyhappy/travel-coding)
 
 大家可以打开看看效果:

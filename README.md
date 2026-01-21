@@ -5,7 +5,7 @@ Hello 大家好，我是公众号: `漫步coding` 的作者, 很高兴我们能�
 
 ![](https://images.xiaozhuanlan.com/uploads/photo/2022/5cb0c91e-fd83-4a04-8df6-65fb602b3834.png)
 
-👉 点击：[在线阅读漫步coding网站](https://manbucoding.com/)
+👉 点击：[在线阅读漫步coding网站](https://easyhappy.github.io/travel-coding/)
 
 ### IntelliJ IDEA
 
