@@ -88,18 +88,18 @@ module.exports = {
             //         { title: "漫步coding正在整理中,敬请期待...", collapsable: false},
             //     ]
             // },
-            {
-                title: 'IDEA系列教程',
-                collapsable: true, // 不折叠
-                children: [
-                    { title: "2026年PyCharm最新破解教程", path: "/idea/PyCharm最新破解教程", collapsable: false},
-                    { title: "2026年Goland最新破解教程", path: "/idea/Goland最新破解教程", collapsable: false},
-                    { title: "2026年IntelliJIDEA最新破解教程", path: "/idea/IntelliJIDEA最新破解教程", collapsable: false},
-                    { title: "2026年PhpStorm最新破解教程", path: "/idea/PhpStorm最新破解教程", collapsable: false},
-                    { title: "2026年webStorm最新破解教程", path: "/idea/webStorm最新破解教程", collapsable: false},
-                    { title: "2026年AppCode最新破解教程", path: "/idea/AppCode最新破解教程", collapsable: false},
-                ]
-            },
+            // {
+            //     title: 'IDEA系列教程',
+            //     collapsable: true, // 不折叠
+            //     children: [
+            //         { title: "2026年PyCharm最新破解教程", path: "/idea/PyCharm最新破解教程", collapsable: false},
+            //         { title: "2026年Goland最新破解教程", path: "/idea/Goland最新破解教程", collapsable: false},
+            //         { title: "2026年IntelliJIDEA最新破解教程", path: "/idea/IntelliJIDEA最新破解教程", collapsable: false},
+            //         { title: "2026年PhpStorm最新破解教程", path: "/idea/PhpStorm最新破解教程", collapsable: false},
+            //         { title: "2026年webStorm最新破解教程", path: "/idea/webStorm最新破解教程", collapsable: false},
+            //         { title: "2026年AppCode最新破解教程", path: "/idea/AppCode最新破解教程", collapsable: false},
+            //     ]
+            // },
 
             {
               title: '开发工具',
