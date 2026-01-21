@@ -16,13 +16,14 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:easyhappy/travel-coding.git master:gh-pages
+# Use current branch (main) to push to gh-pages
+git push -f git@github.com:easyhappy/travel-coding.git HEAD:gh-pages
 
 
 cd -
 
-git init
+# Don't re-initialize git, just commit and push
 git add -A
-git commit -m 'deploy'
+git commit -m 'deploy' || echo "No changes to commit"
 
 git push -f git@github.com:easyhappy/travel-coding.git master:master
