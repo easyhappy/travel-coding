@@ -8,8 +8,8 @@
     "vuepress-theme-reco": "^1.6.11"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
+    "docs:build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs"
   },
   "dependencies": {
     "vuepress-theme-vue": "^1.1.1"
