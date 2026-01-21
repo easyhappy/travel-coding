@@ -35,18 +35,6 @@ Hello 大家好，我是公众号: `漫步coding` 的作者, 很高兴我们能�
 
 漫步coding, 正在整理中, 敬请期待...
 
-
-<!-- ### IntelliJ IDEA
-
-- [2022年PyCharm 最新破解教程](/idea/PyCharm最新破解教程.md)
-- [2022年Goland 最新破解教程](/idea/Goland最新破解教程.md)
-- [2022 年 PhpStorm 最新破解教程](/idea/PhpStorm最新破解教程.md)
-- [2022 年 webStorm 最新破解教程](/idea/webStorm最新破解教程.md)
-- [2022 年 IntelliJ IDEA 最新破解教程](/idea/IntelliJIDEA最新破解教程.md)
-- [2022 年 IntelliJ IDEA 最新破解教程](/idea/AppCode最新破解教程.md) -->
-
-
 ### 开发工具必备
 
-<!-- - [2022 年最新 Charles 使用教程 (文中含激活码)](/tools/最新Charles使用教程.md) -->
 - [如何利用VuePress和GithubPage搭建一个轻量级博客](/tools/VuePress和GithubPage博客搭建.md)
