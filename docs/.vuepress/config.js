@@ -113,8 +113,7 @@ module.exports = {
               title: "公众号",
               collapsable: true, // 不折叠
               children: [
-                    { title: "关注公众号", path: "/about_me/", collapsable: false},
-                    { title: "添加微信", path: "/about_me/wechat", collapsable: false},
+                    { title: "关注公众号", path: "/about_me/wechat", collapsable: false}
                 ]
             },
           ]

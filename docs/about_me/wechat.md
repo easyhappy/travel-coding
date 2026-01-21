@@ -10,4 +10,4 @@ Hello 大家好，我是公众号漫步coding的作者, 很高兴我们能在这
 
 也欢迎大家关注我的公众号:
 
-![](https://images.xiaozhuanlan.com/uploads/photo/2021/ebadcf18-553b-42d5-ab2d-3414564d9c33.png!large)
+![qrcode_for_gh_df06936ed1fd_258](https://github.com/user-attachments/assets/1fb70181-e8b5-4209-90a4-68087ec539df)
